@@ -2,6 +2,13 @@
 
 LSTM built using the Keras Python package to predict time series steps and sequences. Includes sine wave and stock market data.
 
+*Note:* **The prebuilt version of Tensorflow pulled in with pip will not run on
+older Mac OSX machines. Prebuilt Tensorflow requires CPUs that have AVX
+instruction set. You can find out if your Mac support it using the command
+`sysctl -a | grep machdep.cpu.features` If it doesn't, it is recommended to build
+Tensorflow from source. Follow the instructions at
+https://www.tensorflow.org/install/source**
+
 [Full article write-up for this code](https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks)
 
 [Video on the workings and usage of LSTMs and run-through of this code](https://www.youtube.com/watch?v=2np77NOdnwk)
